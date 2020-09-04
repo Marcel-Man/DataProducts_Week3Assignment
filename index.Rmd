@@ -1,0 +1,17 @@
+---
+title: "Week 3 Assignment"
+author: "Marcel Man"
+date: "2020/9/4"
+output: ioslides_presentation
+---
+
+```{r message=FALSE, echo=FALSE}
+library(plotly)
+```
+
+## mtcars 3D scatter plot
+```{r message=FALSE, echo=FALSE, warning=FALSE}
+plot_ly(mtcars, x=~wt, y=~qsec, z=~mpg, type="scatter3d", color=~as.factor(cyl))
+```
+
+## Thanks
